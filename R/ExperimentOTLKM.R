@@ -19,7 +19,7 @@ Experiment.OTL.K.M <- function(dataset.name)
   
   # load dataset
   require(R.matlab)
-  data.mat <- readMat(paste('data/', dataset.name, sep = ''))
+  data.mat <- readMat(paste('../data/', dataset.name, sep = ''))
   
   size <- dim(data.mat$data)
   n <- size[1]
@@ -190,7 +190,7 @@ Experiment.OTL.K.M <- function(dataset.name)
   
 }
 
-setwd('~/Workspace/R/OnlineTransferLearning/Homogeneous')
+setwd('~/Workspace/OnlineTransferLearning/Homogeneous/R')
 
 dataset.name <- 'books_dvd.mat'
 
