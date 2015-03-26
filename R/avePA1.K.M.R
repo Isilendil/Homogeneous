@@ -62,7 +62,7 @@ avePA1.K.M <- function(Y, K, options, id.list)
     if (loss.t > 0)
     {
       # update
-      s.t <- K(id, id)
+      s.t <- K[id, id]
       gamma.t <- min(C, loss.t / s.t)
       alpha <- c(alpha, Y[id]*gamma.t)
       SV <- c(SV, id)
