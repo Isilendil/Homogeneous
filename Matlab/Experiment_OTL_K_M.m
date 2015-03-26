@@ -18,7 +18,7 @@ function  Experiment_OTL_K_M(dataset_name)
 %--------------------------------------------------------------------------
 
 %load dataset
-load(sprintf('data/%s',dataset_name));
+load(sprintf('../data/%s',dataset_name));
 [n,d]       = size(data);
 % set parameters
 options.C   = 5;
