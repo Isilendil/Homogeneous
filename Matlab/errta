@@ -1,0 +1,26 @@
+
+1.
+
+classifier.alpha1 = alpha1;
+classifier.alpha1 = alpha2;
+
+In HomOTLf_K_M.m, HomOTL1_K_M.m and HomOTL2_K_M.m, alpha1 in classifier are assigned the value of alpha1, and then are assigned the value of alpha2.
+However, alpha2 in classifier have no value.
+
+
+2. 
+t_tick = T_TICK
+
+...
+
+if t<T_TICK
+    if (t==t_tick)
+        ...
+        if t_tick>=T_TICK
+            t_tick = T_TICK
+        end
+    end
+end
+
+t_tick is equal to T_TICK, then there is no chance to run code in the next if-clause.
+

@@ -90,6 +90,12 @@ Experiment.OTL.K.M <- function(dataset.name)
   nGroup <- dim(data.mat$ID.new)[1]
   nColumn <- dim(data.mat$ID.new)[2] %/% options$t.tick
   
+  source('PA1.K.M.R')
+  source('PAIO.K.M.R')
+  source('HomOTLF.K.M.R')
+  source('HomOTL1.K.M.R')
+  source('HomOTL2.K.M.R')
+  
   for (i in 1 : nGroup )
   {
     printf(paste('running on the ', i, '-th trial...', sep = '' ))
