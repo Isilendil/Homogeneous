@@ -98,7 +98,7 @@ Experiment.OTL.K.M <- function(dataset.name)
   
   for (i in 1 : nGroup )
   {
-    printf(paste('running on the ', i, '-th trial...', sep = '' ))
+    print(paste('running on the ', i, '-th trial...', sep = '' ))
     ID <- data.mat$ID.new[i, ]
     
     # 1. PA-I
